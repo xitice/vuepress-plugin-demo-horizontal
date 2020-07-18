@@ -1,32 +1,9 @@
 {
-  "_from": "vuepress-plugin-demo-container@^0.1.1",
-  "_id": "vuepress-plugin-demo-container@0.1.1",
-  "_inBundle": false,
-  "_integrity": "sha1-2o624aS9lLnNO+7zMjtSmzX26gc=",
-  "_location": "/vuepress-plugin-demo-container",
-  "_phantomChildren": {},
-  "_requested": {
-    "type": "range",
-    "registry": true,
-    "raw": "vuepress-plugin-demo-container@^0.1.1",
-    "name": "vuepress-plugin-demo-container",
-    "escapedName": "vuepress-plugin-demo-container",
-    "rawSpec": "^0.1.1",
-    "saveSpec": null,
-    "fetchSpec": "^0.1.1"
-  },
-  "_requiredBy": [
-    "#DEV:/"
-  ],
-  "_resolved": "http://192.168.102.232:6060/repository/npm-public/vuepress-plugin-demo-container/-/vuepress-plugin-demo-container-0.1.1.tgz",
-  "_shasum": "da8eb6e1a4bd94b9cd3beef3323b529b35f6ea07",
-  "_spec": "vuepress-plugin-demo-container@^0.1.1",
-  "_where": "D:\\vue\\hui-doc\\hui-doc-latest",
   "author": {
-    "name": "JianhuiChen"
+    "name": "xitice"
   },
   "bugs": {
-    "url": "https://github.com/calebman/vuepress-plugin-demo-container/issues"
+    "url": "https://github.com/xitice/vuepress-plugin-demo-horizontal/issues"
   },
   "bundleDependencies": false,
   "config": {
@@ -51,7 +28,7 @@
     "nodemon": "^2.0.4",
     "vuepress": "1.5.0"
   },
-  "homepage": "https://github.com/calebman/vuepress-plugin-demo-container#readme",
+  "homepage": "https://github.com/xitice/vuepress-plugin-demo-horizontal#readme",
   "husky": {
     "hooks": {
       "commit-msg": "commitlint -e $GIT_PARAMS"
@@ -67,10 +44,10 @@
   ],
   "license": "MIT",
   "main": "src/index.js",
-  "name": "vuepress-plugin-demo-container",
+  "name": "vuepress-plugin-demo-horizontal",
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/calebman/vuepress-plugin-demo-container.git"
+    "url": "git+https://github.com/xitice/vuepress-plugin-demo-horizontal.git"
   },
   "scripts": {
     "docs:build": "vuepress build docs",
@@ -80,5 +57,5 @@
     "release:major": "standard-version --release-as major && git push --follow-tags origin master",
     "release:minor": "standard-version --release-as minor && git push --follow-tags origin master"
   },
-  "version": "0.1.1"
+  "version": "1.0.0"
 }
