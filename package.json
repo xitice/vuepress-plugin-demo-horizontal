@@ -1,0 +1,84 @@
+{
+  "_from": "vuepress-plugin-demo-container@^0.1.1",
+  "_id": "vuepress-plugin-demo-container@0.1.1",
+  "_inBundle": false,
+  "_integrity": "sha1-2o624aS9lLnNO+7zMjtSmzX26gc=",
+  "_location": "/vuepress-plugin-demo-container",
+  "_phantomChildren": {},
+  "_requested": {
+    "type": "range",
+    "registry": true,
+    "raw": "vuepress-plugin-demo-container@^0.1.1",
+    "name": "vuepress-plugin-demo-container",
+    "escapedName": "vuepress-plugin-demo-container",
+    "rawSpec": "^0.1.1",
+    "saveSpec": null,
+    "fetchSpec": "^0.1.1"
+  },
+  "_requiredBy": [
+    "#DEV:/"
+  ],
+  "_resolved": "http://192.168.102.232:6060/repository/npm-public/vuepress-plugin-demo-container/-/vuepress-plugin-demo-container-0.1.1.tgz",
+  "_shasum": "da8eb6e1a4bd94b9cd3beef3323b529b35f6ea07",
+  "_spec": "vuepress-plugin-demo-container@^0.1.1",
+  "_where": "D:\\vue\\hui-doc\\hui-doc-latest",
+  "author": {
+    "name": "JianhuiChen"
+  },
+  "bugs": {
+    "url": "https://github.com/calebman/vuepress-plugin-demo-container/issues"
+  },
+  "bundleDependencies": false,
+  "config": {
+    "commitizen": {
+      "path": "./node_modules/cz-conventional-changelog"
+    }
+  },
+  "deprecated": false,
+  "description": "Vuepress plugin for demo block.",
+  "devDependencies": {
+    "@commitlint/cli": "^8.3.5",
+    "@commitlint/config-conventional": "^8.3.4",
+    "ant-design-vue": "^1.6.1",
+    "conventional-changelog-cli": "^2.0.34",
+    "conventional-changelog-lint-config-cz": "^0.3.0",
+    "core-js": "^2.6.5",
+    "cz-conventional-changelog": "^3.2.0",
+    "husky": "^4.2.5",
+    "less": "^3.8.1",
+    "less-loader": "^4.1.0",
+    "markdown-it-container": "^2.0.0",
+    "nodemon": "^2.0.4",
+    "vuepress": "1.5.0"
+  },
+  "homepage": "https://github.com/calebman/vuepress-plugin-demo-container#readme",
+  "husky": {
+    "hooks": {
+      "commit-msg": "commitlint -e $GIT_PARAMS"
+    }
+  },
+  "keywords": [
+    "documentation",
+    "plugin",
+    "vue",
+    "vuepress",
+    "demo",
+    "block"
+  ],
+  "license": "MIT",
+  "main": "src/index.js",
+  "name": "vuepress-plugin-demo-container",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/calebman/vuepress-plugin-demo-container.git"
+  },
+  "scripts": {
+    "docs:build": "vuepress build docs",
+    "docs:build-preview": "vuepress build docs && anywhere -d docs/.vuepress/dist/",
+    "docs:dev": "nodemon --ext md,vue,js --watch .vuepress --watch . --exec vuepress dev docs --no-cache --debug",
+    "release": "standard-version && git push --follow-tags origin master",
+    "release:major": "standard-version --release-as major && git push --follow-tags origin master",
+    "release:minor": "standard-version --release-as minor && git push --follow-tags origin master"
+  },
+  "version": "0.1.1"
+}
