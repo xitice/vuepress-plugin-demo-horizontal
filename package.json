@@ -57,5 +57,5 @@
     "release:major": "standard-version --release-as major && git push --follow-tags origin master",
     "release:minor": "standard-version --release-as minor && git push --follow-tags origin master"
   },
-  "version": "1.0.0"
+  "version": "1.0.1"
 }

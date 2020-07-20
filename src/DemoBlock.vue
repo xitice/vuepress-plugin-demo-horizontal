@@ -15,7 +15,7 @@
       <div class="description" v-if="$slots.description">
         <slot name="description"></slot>
       </div>
-      <div class="code-content" >
+      <div class="code-content" :class="{'short-code': short}">
         <slot name="source"></slot>
       </div>
     </div>
@@ -55,7 +55,8 @@ export default {
       isExpanded: false,
       fixedControl: false,
       codeContentWidth: 0,
-      scrollParent: null
+      scrollParent: null,
+      short: false
     };
   },
   props: {
@@ -158,6 +159,7 @@ export default {
         codeContent.style.width = "100%";
         codeContent.borderRight = "none";
       }
+      this.short = codeContent.clientHeight < this.demoAreaHeight
     });
   },
   beforeDestroy() {
@@ -333,5 +335,13 @@ export default {
   padding-left: 5px;
   padding-right: 25px;
 }
-
+.short-code {
+  height: 100%;
+}
+.short-code div {
+  height: 100%;
+}
+.short-code pre {
+  height: 98%;
+}
 </style>
